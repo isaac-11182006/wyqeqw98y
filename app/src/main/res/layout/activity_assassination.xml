@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/selectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Select role to assassinate"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:id="@+id/assassinateSelect"
+        android:layout_below="@id/selectText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/merlinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MERLIN"/>
+
+        <Button
+            android:id="@+id/loversButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRISTAN AND ISEULT"/>
+
+        <Button
+            android:id="@+id/utherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UTHER"/>
+
+        <Button
+            android:id="@+id/loyalWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOYALS WON"/>
+
+        <Button
+            android:id="@+id/minionWins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MINIONS WON"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/playerordermsg"
+        android:layout_below="@id/assassinateSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Players order"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"/>
+
+    <ListView
+        android:id="@+id/playerorderlist"
+        android:layout_below="@id/playerordermsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

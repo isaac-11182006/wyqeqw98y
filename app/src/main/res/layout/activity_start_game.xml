@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/playername"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Player's turn (click to show)"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/cardlayout"
+        android:layout_weight="10">
+
+        <ImageView
+            android:id="@+id/playercard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lancelot_loyal"
+            android:padding="25dp"/>
+
+        <ImageView
+            android:id="@+id/backofcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cardback"
+            android:padding="25dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/cardlayout"
+        android:layout_weight="1"
+        android:text="End turn"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
